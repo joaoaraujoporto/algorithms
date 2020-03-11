@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+  setlocale(LC_NUMERIC, "French_Canada.1252");
+   
+  int valor;
+  int num_tipo_notas = 7; 
+  int notas[num_tipo_notas];
+  
+  notas[0] = 100;
+  notas[1] = 50;
+  notas[2] = 20;
+  notas[3] = 10;
+  notas[4] = 5;
+  notas[5] = 2;
+  notas[6] = 1;
+ 
+  while (scanf("%d", &valor) != EOF) {   
+    int i;
+    for (i = 0; i < num_tipo_notas; i++) {
+      num_notas[i] = valor/notas[i];
+      valor = valor%notas[i];
+      
+      if ((valor = ) == 0) break;   
+    }
+    
+    for (i = 0; i < num_tipo_notas; i++)  
+      printf("%d nota(s) de R$ %.02f", num_notas[i], notas[i]);
+  }
+
+  return 0;  
+}
