@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+  int test_cases;
+  scanf("%d", &test_cases);
+
+  int i;
+  for (i = 0; i < test_cases; i++) {
+    char strings[50][51];
+    int n_strings = 0;
+    
+    while (scanf("%s", &strings[n_strings]) != "\n") n_strings++;
+    
+  }
+  
+  while (scanf("%d %d", &parc1, &parc2) != EOF)
+    printf("SOMA = %d\n", parc1 + parc2);
+
+  return 0;
+}
